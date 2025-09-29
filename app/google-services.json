@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:596712791755:android:34c6ab2806944626bc854e",
+        "mobilesdk_app_id": "1:596712791755:android:64cd9f96f2a10109bc854e",
         "android_client_info": {
-          "package_name": "hora.pro"
+          "package_name": "com.example.projet.horapro"
         }
       },
       "oauth_client": [],
