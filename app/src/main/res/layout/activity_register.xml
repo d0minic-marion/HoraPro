@@ -11,17 +11,19 @@
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
         android:hint="Email"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:autofillHints="emailAddress"/>
+            android:autofillHints="emailAddress"
+            android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -29,18 +31,20 @@
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:hint="Mot de passe"
         app:endIconMode="password_toggle"
-        app:layout_constraintTop_toBottomOf="@id/tilEmail"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp">
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilEmail">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"/>
+            android:imeOptions="actionDone"
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <CheckBox
@@ -55,30 +59,32 @@
 
     <Button
         android:id="@+id/btnContinue"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:text="Continue"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/bg_primary_button"
+        android:text="Continuer"
         android:textAllCaps="false"
         android:textColor="@color/hp_on_primary"
-        android:background="@drawable/bg_primary_button"
-        app:layout_constraintTop_toBottomOf="@id/cbTerms"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"/>
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilPassword" />
 
     <TextView
         android:id="@+id/tvSignin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="Vous avez déjà un compte ? Se connecter"
         android:textColor="@color/hp_text_muted"
         android:textSize="13sp"
-        app:layout_constraintTop_toBottomOf="@id/btnContinue"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"/>
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnContinue" />
 
-<ProgressBar
+    <ProgressBar
     android:id="@+id/progress"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
