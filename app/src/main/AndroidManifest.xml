@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:theme="@style/Theme.HoraPro">
+
+        <!-- Inscription (classe dans com.example.horapro) -->
+        <activity
+            android:name="com.example.horapro.RegisterActivity" />
+
+        <!-- Démarrage sur Login (classe dans com.example.projet.horapro) -->
+        <activity
+            android:name="com.example.projet.horapro.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Home (classe dans com.example.projet.horapro) -->
+        <activity
+            android:name="com.example.projet.horapro.MainActivity" />
+    </application>
+</manifest>

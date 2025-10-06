@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "596712791755",
+    "firebase_url": "https://projet-horapro-default-rtdb.firebaseio.com",
+    "project_id": "projet-horapro",
+    "storage_bucket": "projet-horapro.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:596712791755:android:64cd9f96f2a10109bc854e",
+        "android_client_info": {
+          "package_name": "com.example.projet.horapro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjS8xrBcUTYop_LoOI2w2zlJq5v_HCygc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
