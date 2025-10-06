@@ -4,15 +4,17 @@
     android:layout_height="200dp"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="?attr/colorPrimary"
     android:padding="16dp">
 
     <ImageView
         android:layout_width="72dp"
         android:layout_height="72dp"
         android:src="@mipmap/ic_launcher_round"
-    android:contentDescription="Profile"
-    android:background="@drawable/bg_card_white"
-    android:padding="8dp"/>
+        android:contentDescription="Profil"
+        android:background="@drawable/bg_card_white"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp" />
 
     <TextView
         android:id="@+id/nav_user_name"
@@ -21,13 +23,12 @@
         android:text="Utilisateur"
         android:textColor="@android:color/white"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:paddingTop="8dp"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/nav_user_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="horapro@email.com"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white" />
 </LinearLayout>

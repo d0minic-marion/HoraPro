@@ -1,8 +1,31 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/nav_home" android:title="Page d'accueil" android:icon="@android:drawable/ic_menu_view"/>
-    <item android:id="@+id/nav_report" android:title="Rapport" android:icon="@android:drawable/ic_menu_info_details"/>
-    <item android:id="@+id/nav_employees" android:title="Employés" android:icon="@android:drawable/ic_menu_manage"/>
-    <item android:id="@+id/nav_appreciation" android:title="Appréciation" android:icon="@android:drawable/ic_menu_compass"/>
-    <item android:id="@+id/nav_agenda" android:title="Agenda" android:icon="@android:drawable/ic_menu_my_calendar"/>
-    <item android:id="@+id/nav_settings" android:title="Paramètre" android:icon="@android:drawable/ic_menu_preferences"/>
+    <item
+        android:id="@+id/nav_home"
+        android:title="Page d'accueil"
+        android:icon="@android:drawable/ic_menu_view" />
+
+    <item
+        android:id="@+id/nav_report"
+        android:title="Rapport"
+        android:icon="@android:drawable/ic_menu_info_details" />
+
+    <item
+        android:id="@+id/nav_employees"
+        android:title="Employés"
+        android:icon="@android:drawable/ic_menu_manage" />
+
+    <item
+        android:id="@+id/nav_appreciation"
+        android:title="Appréciation"
+        android:icon="@android:drawable/ic_menu_compass" />
+
+    <item
+        android:id="@+id/nav_agenda"
+        android:title="Agenda"
+        android:icon="@android:drawable/ic_menu_my_calendar" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Paramètres"
+        android:icon="@android:drawable/ic_menu_preferences" />
 </menu>
