@@ -31,10 +31,12 @@ class LoginActivity : AppCompatActivity() {
         btnLogin = findViewById(R.id.btnLogin)
         progress = findViewById(R.id.progress)
 
+        // Lien vers inscription
         findViewById<TextView?>(R.id.tvSignup)?.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
         }
 
+        // Lien vers reset password
         findViewById<TextView?>(R.id.tvForgot)?.setOnClickListener {
             val e = email.text?.toString()?.trim().orEmpty()
             if (e.isBlank()) {
@@ -54,7 +56,6 @@ class LoginActivity : AppCompatActivity() {
         }
 
         btnLogin.setOnClickListener { onLoginClick() }
-
     }
 
     private fun onLoginClick() {
@@ -71,7 +72,9 @@ class LoginActivity : AppCompatActivity() {
         auth.signInWithEmailAndPassword(e, p)
             .addOnSuccessListener {
                 setLoading(false)
-                startActivity(Intent(this, MainActivity::class.java))
+                // ✅ Navigation vers la Home
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
                 finish()
             }
             .addOnFailureListener { ex ->

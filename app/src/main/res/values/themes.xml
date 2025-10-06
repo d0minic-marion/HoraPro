@@ -1,8 +1,21 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+
     <style name="Theme.HoraPro" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Status bar et navigation bar -->
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/white</item>
+
+        <!-- Couleurs Material3 -->
         <item name="colorPrimary">@color/hp_primary</item>
         <item name="colorOnPrimary">@color/hp_on_primary</item>
+        <item name="colorSecondary">@color/hp_secondary</item>
+        <item name="colorOnSecondary">@color/hp_on_secondary</item>
+        <item name="android:colorBackground">@color/hp_background</item>
+        <item name="colorOnBackground">@color/hp_on_background</item>
+        <item name="colorSurface">@color/hp_surface</item>
+        <item name="colorOnSurface">@color/hp_on_surface</item>
+        <item name="colorError">@color/hp_error</item>
+        <item name="colorOnError">@color/hp_on_error</item>
     </style>
+
 </resources>
